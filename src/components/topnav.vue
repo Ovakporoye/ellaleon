@@ -1,91 +1,93 @@
 <template>
   <div>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand" href="/">EllaLeon.</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item link" :class="{ active: $route.path == '/' }">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              :class="{
-                active: $route.path == '/about' || $route.path == '/hse-policy',
-              }"
+      <div class="container">
+        <a class="navbar-brand" href="/">EllaLeon.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item link" :class="{ active: $route.path == '/' }">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                :class="{
+                  active: $route.path == '/about' || $route.path == '/hse-policy',
+                }"
+              >
+                Who We Are
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/about">About Us</a>
+                <a class="dropdown-item" href="/hse-policy">HSE Policy</a>
+                <a class="dropdown-item" href="/environmentalpolicy">Environmental Policy</a>
+                <a class="dropdown-item" href="/communityaffairs">Community Affairs</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                :class="{
+                  active:
+                    $route.path == '/construction' ||
+                    $route.path == '/civilengineering' ||
+                    $route.path == '/mechanicalengineering' ||
+                    $route.path == '/procurement',
+                }"
+              >
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/procurement">Procurement</a>
+                <a class="dropdown-item" href="/construction"
+                  >Real Estate & Building Construction</a
+                >
+                <a class="dropdown-item" href="/mechanicalengineering"
+                  >Mechanical Engineering</a
+                >
+                <a class="dropdown-item" href="/civilengineering"
+                  >Civil Engineering</a
+                >
+              </div>
+            </li>
+            <li
+              class="nav-item link"
+              :class="{ active: $route.path == '/projects' }"
             >
-              Who We Are
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/about">About Us</a>
-              <a class="dropdown-item" href="/hse-policy">HSE Policy</a>
-              <a class="dropdown-item" href="/environmentalpolicy">Environmental Policy</a>
-              <a class="dropdown-item" href="/communityaffairs">Community Affairs</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              :class="{
-                active:
-                  $route.path == '/construction' ||
-                  $route.path == '/civilengineering' ||
-                  $route.path == '/mechanicalengineering' ||
-                  $route.path == '/procurement',
-              }"
+              <a class="nav-link" href="/projects">Projects</a>
+            </li>
+            <li
+              class="nav-item link"
+              :class="{ active: $route.path == '/contactus' }"
             >
-              Services
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/procurement">Procurement</a>
-              <a class="dropdown-item" href="/construction"
-                >Real Estate & Building Construction</a
-              >
-              <a class="dropdown-item" href="/mechanicalengineering"
-                >Mechanical Engineering</a
-              >
-              <a class="dropdown-item" href="/civilengineering"
-                >Civil Engineering</a
-              >
-            </div>
-          </li>
-          <li
-            class="nav-item link"
-            :class="{ active: $route.path == '/projects' }"
-          >
-            <a class="nav-link" href="/projects">Projects</a>
-          </li>
-          <li
-            class="nav-item link"
-            :class="{ active: $route.path == '/contactus' }"
-          >
-            <a class="nav-link" href="/contactus">Contact Us</a>
-          </li>
-        </ul>
+              <a class="nav-link" href="/contactus">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 

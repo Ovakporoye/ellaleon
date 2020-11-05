@@ -99,10 +99,10 @@
           </div>
         </div> -->
 
-        <div class="col-lg-6 py-lg-4">
+        <div class="col-lg-5 py-lg-4">
           <div
             class="oursi"
-            data-aos="fade-right"
+            data-aos="fade-down"
             data-aos-once="true"
             data-aos-duration="3000"
           >
@@ -114,16 +114,16 @@
             />
           </div>
         </div>
-        <div class="col-lg-6 py-lg-5">
+        <div class="col-lg-7 py-lg-5">
           <div
             class="ours"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-once="true"
             data-aos-duration="3000"
           >
-            <div id="accordion">
+            <div id="accordion" class="mt-lg-5">
               <div class="card">
-                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
+                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
                   <h5 class="mb-0">
                     Our Core Values
                     <!-- <button
@@ -135,12 +135,13 @@
                     >
                       
                     </button> -->
+                    <span class="float-right"><small><i class="fas fa-angle-up"></i></small></span>
                   </h5>
                 </div>
 
                 <div
                   id="collapseOne"
-                  class="collapse"
+                  class="collapse show"
                   aria-labelledby="headingOne"
                   data-parent="#accordion"
                 >
@@ -148,7 +149,7 @@
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
+                <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
                   <h5 class="mb-0">
                     Our Mission
                     <!-- <button
@@ -160,6 +161,8 @@
                     >
                       
                     </button> -->
+                    <span class="float-right"><small><i class="fas fa-angle-up"></i></small></span>
+                    
                   </h5>
                 </div>
                 <div
@@ -177,7 +180,7 @@
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingThree" data-toggle="collapse"
+                <div class="card-header" id="headingThree" data-toggle="collapse" aria-expanded="false"
                       data-target="#collapseThree">
                   <h5 class="mb-0">
                      Our Vision
@@ -190,6 +193,8 @@
                     >
                      
                     </button> -->
+                    <span class="float-right"><small><i class="fas fa-angle-up"></i></small></span>
+
                   </h5>
                 </div>
                 <div

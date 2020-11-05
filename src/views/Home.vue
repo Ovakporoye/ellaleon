@@ -60,35 +60,35 @@
               href="#civil"
               role="tab"
             >
-              <p class="text-center m-0">
+              <p class="text-center">
                 <img src="@/assets/img/engineering.svg" height="45px" alt="" />
               </p>
-              <p class="txt m-0">Civil Engineering</p>
+              <p class="txt">Civil Engineering</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#mech" role="tab">
-              <p class="text-center m-0">
+              <p class="text-center">
                 <img src="@/assets/img/motor.svg" height="45px" alt="" />
               </p>
-              <p class="txt m-0">Mechanical Engineering</p>
+              <p class="txt">Mechanical Engineering</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#procure" role="tab">
-              <p class="text-center m-0">
+              <p class="text-center">
                 <img src="@/assets/img/gear.svg" height="45px" alt="" />
               </p>
 
-              <p class="txt m-0">Procurement</p>
+              <p class="txt">Procurement</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#elect" role="tab">
-              <p class="text-center m-0">
+              <p class="text-center">
                 <img src="@/assets/img/architect.svg" height="45px" alt="" />
               </p>
-              <p class="txt m-0">Building & Construction</p>
+              <p class="txt">Building & Construction</p>
             </a>
           </li>
         </ul>
@@ -98,7 +98,7 @@
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="civil" role="tabpanel">
               <div class="container py-5">
-                <div class="row">
+                <div class="row"> 
                   <div class="col-lg-7 py-5">
                     <p class="fs-24 fw-6 tx-u ff-q text-white">
                       Civil engineering service

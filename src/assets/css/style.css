@@ -2,7 +2,9 @@
     src: url('../fonts/avenir_ff/AvenirLTStd-Book.otf');
     font-family: Avenir;
 }
-
+a:visited{
+    color: inherit;
+}
 .container {
     min-width: 85vw;
 }
@@ -321,10 +323,20 @@ a.dropdown-item {
 #services .nav-tabs a.nav-link.active {
     font-weight: 700;
 }
-
+#services .nav-tabs li:nth-child(1) a.nav-link::after{
+    margin-left: 4.3rem;
+}
+#services .nav-tabs li:nth-child(2) a.nav-link::after{
+    margin-left: 7.3rem;
+}
+#services .nav-tabs li:nth-child(3) a.nav-link::after{
+    margin-left: 4rem;
+}
+#services .nav-tabs li:nth-child(4) a.nav-link::after{
+    margin-left: 7.3rem;
+}
 #services .nav-tabs a.nav-link::after {
     margin-top: -16px;
-    margin-left: 3rem;
     content: '';
     height: 0;
     width: 0;
@@ -379,6 +391,7 @@ a.dropdown-item {
     align-content: center;
 }
 .oursi{
+    height: 50vh;
     max-height: 50vh;
     
 }
@@ -399,7 +412,35 @@ a.dropdown-item {
     border: none;
     background: none;
 }
+#accordion .card .card-header{
+    background: none;
+    font-family: Avenir;
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight: 600;
+    color: rgba(9, 9, 9, 0.6);
+    padding: 20px 20px;
+    font-size: 18px;
+    line-height: normal;
+    transition: .5s ease-in-out;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+#accordion .card .card-header.collapsed{
+    color: rgba(9, 9, 9, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
 
+}
+#accordion .card .card-body{
+    font-size: 15px;
+    font-family: Avenir;
+}
+.card-header[aria-expanded='true'] i{
+    transition: .5s ease-in-out;
+
+}
+.card-header[aria-expanded='false'] i{
+    transform: rotate(180deg);
+    transition: .5s ease-in-out;
+}
 
 
 .btn-out-white {
@@ -515,6 +556,18 @@ a.dropdown-item {
         display: none;
     }
 
+    #services .nav-tabs li:nth-child(1) a.nav-link::after{
+        margin-left: .3rem;
+    }
+    #services .nav-tabs li:nth-child(2) a.nav-link::after{
+        margin-left: .3rem;
+    }
+    #services .nav-tabs li:nth-child(3) a.nav-link::after{
+        margin-left: .3rem;
+    }
+    #services .nav-tabs li:nth-child(4) a.nav-link::after{
+        margin-left: .3rem;
+    }
     #services .nav-tabs a.nav-link::after {
         margin-left: .6rem;
     }
