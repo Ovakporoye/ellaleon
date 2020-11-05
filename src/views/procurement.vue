@@ -4,7 +4,7 @@
       <div class="inner">
         <div class="container py-5">
           <div class="fs-50 fw-6 text-white pt-5">Procurement Services</div>
-          <p class="fs-20 text-white ff-a mt-4">
+          <p class="fs-20 text-white ff-a mt-4" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000">
             Ellaleon Ventures Limited understands the art of obtaining products
             and services. The procurement cycle follows specific steps for
             identifying a requirement or need of the company through the final
@@ -14,7 +14,7 @@
             practice to adopt a proven step-by-step technique which will help
             management successfully achieve its goals in this stead.
           </p>
-          <p class="fs-20 text-white ff-a mt-4">
+          <p class="fs-20 text-white ff-a mt-4" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000">
             Our technical know-how is further enhanced by our global reach of
             partners and OEM’s that combine to deliver the most efficient and
             cost effective material sourcing solution to our clients.
@@ -24,16 +24,16 @@
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row"> 
         <div class="col-lg-6">
-          <div class="picture">
+          <div class="picture" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000">
             <div class="s3">
               <div class="inner"></div>
             </div>
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="text">
+          <div class="text" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000">
             <p class="fs-18">Our Procurement services include:</p>
             <div class="d-flex align-content-center">
               <div class="mr-3">
@@ -71,7 +71,7 @@
         </div>
 
         <div class="col-lg-6">
-          <div class="text">
+          <div class="text" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000">
             <p class="fs-18">
               Our highly ethical and fair standards as positioned us as material
               provider with good reputation in the industry for unequalled
@@ -88,7 +88,7 @@
         </div>
 
         <div class="col-lg-6">
-          <div class="picture">
+          <div class="picture" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000">
             <div class="s3">
               <div class="inner"></div>
             </div>

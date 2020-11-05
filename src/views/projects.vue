@@ -11,11 +11,86 @@
     <section>
       <div class="container py-5">
         <div class="row">
-          <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-once="true" data-aos-duration="3000" v-for="project in filteredSupplies" :key="project">
+          <div class="col-12 mb-4">
+            <!-- <div>
+              <p class="fs-16 ff-a m-0">Filter projects by status:</p>
+            </div> -->
+            <div class="d-flex row px-3">
+              <div class="custom-control custom-radio mb-3 mr-3">
+                <input
+                  type="radio"
+                  id="customRadio1"
+                  name="customRadio"
+                  v-model="selectedCategory"
+                  value="all"
+                  class="custom-control-input"
+                  checked
+                />
+                <label
+                  class="custom-control-label fs-18 ff-a pt-1"
+                  for="customRadio1"
+                  >All Projects</label
+                >
+              </div>
+              <div class="custom-control custom-radio mb-3 mr-3">
+                <input
+                  type="radio"
+                  id="customRadio2"
+                  name="customRadio"
+                  v-model="selectedCategory"
+                  value="Completed"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label fs-18 ff-a pt-1"
+                  for="customRadio2"
+                  >Completed</label
+                >
+              </div>
+              <div class="custom-control custom-radio mb-3 mr-3">
+                <input
+                  type="radio"
+                  id="customRadio3"
+                  name="customRadio"
+                  v-model="selectedCategory"
+                  value="Ongoing"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label fs-18 ff-a pt-1"
+                  for="customRadio3"
+                  >Ongoing</label
+                >
+              </div>
+              <div class="custom-control custom-radio mb-3">
+                <input
+                  type="radio"
+                  id="customRadio5"
+                  name="customRadio"
+                  v-model="selectedCategory"
+                  value="Pending"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label fs-18 ff-a pt-1"
+                  for="customRadio5"
+                  >Pending</label
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-sm-6 mb-3"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="3000"
+            v-for="project in filteredSupplies"
+            :key="project"
+          >
             <div class="card">
               <div class="product-image">
                 <div
-                  class="inner py-lg-5 px-lg-4 p-3" 
+                  class="inner py-lg-5 px-lg-4 p-3"
                   :style="`background-image: url(${project.image})`"
                 >
                   <p class="text-white fs-22 ff-a text-capitalize">
@@ -24,7 +99,6 @@
                   <div class="white-line my-5"></div>
                 </div>
 
-               
                 <div class="info">
                   <div class="py-lg-5 px-lg-4 p-3">
                     <p class="text-white fs-22 ff-a text-capitalize">
@@ -420,16 +494,15 @@ export default {
   },
   computed: {
     filteredSupplies() {
-      return this.paginate(this.projects);
-      // var category = this.selectedCategory;
+      var category = this.selectedCategory;
 
-      // if (category === "all") {
-      //   return this.paginate(this.projects);
-      // } else {
-      //   return this.projects.filter(function (item) {
-      //     return item.status === category;
-      //   });
-      // }
+      if (category === "all") {
+        return this.paginate(this.projects);
+      } else {
+        return this.projects.filter(function (item) {
+          return item.status === category;
+        });
+      }
     },
   },
   watch: {
@@ -442,3 +515,39 @@ export default {
   },
 };
 </script>
+<style scoped>
+.custom-control-label::before {
+  border: 1px solid #f1750e;
+
+}
+.custom-control-label::before {
+    position: absolute;
+    top: unset;
+    left: unset;
+    margin-top: +25px;
+    display: block;
+    width: 4rem;
+    height: 2px;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border:unset;
+}
+.custom-radio .custom-control-label::before{
+  border-radius: unset;
+}
+.custom-control-input{
+  display: none;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #f1750e;
+  background-color: #f1750e;
+}
+.custom-control-input:checked ~ .custom-control-label {
+  color: #f1750e;
+  font-weight: 500;
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none !important;
+}
+</style>

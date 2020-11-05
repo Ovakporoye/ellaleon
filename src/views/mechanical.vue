@@ -4,7 +4,7 @@
       <div class="inner">
         <div class="container py-5">
           <div class="fs-50 fw-6 text-white pt-5">Mechanical Engineering</div>
-          <p class="text-white fs-20 ff-a mt-4">
+          <p class="text-white fs-20 ff-a mt-4" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000">
             In Ellaleon Ventures Ltd, we ensure that we deliver world class
             services with adherence to the highest global practises, & safety
             standards. Our fabrication capabilities encompass Piping, civil
@@ -17,16 +17,16 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 order-1 order-lg-1">
-          <div class="picture">
+          <div class="picture" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000">
             <div class="s2">
               <div class="inner"></div>
             </div>
           </div>
         </div>
         <div class="col-lg-6 order-2 order-lg-2">
-          <div class="text">
+          <div class="text" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000">
             <p class="fs-30 fw-7">Construction Management</p>
-            <p class="fs-18">
+            <p class="fs-18" >
               Our proven Construction Management capabilities combined with our
               experienced inspection services team provides total delivery on
               any project. We are experienced at and capable of executing
@@ -63,7 +63,7 @@
         </div>
 
         <div class="col-lg-6 order-4 order-lg-3">
-          <div class="text">
+          <div class="text" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000">
             <p class="fs-30 fw-7">Offshore & Onshore Fabrication</p>
 
             <p class="fs-18 pr-lg-4">
@@ -73,7 +73,7 @@
           </div>
         </div>
         <div class="col-lg-6 order-3 order-lg-4">
-          <div class="picture">
+          <div class="picture" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000">
             <div class="s2">
               <div class="inner"></div>
             </div>

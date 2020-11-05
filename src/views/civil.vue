@@ -12,7 +12,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 order-lg-1 order-2">
-            <div class="text">
+            <div class="text" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000">
               <p class="fs-30 fw-7">Civil Engineering</p>
               <p class="fs-18">
                 We over a decade of experience in civil construction services
@@ -43,21 +43,21 @@
             </div>
           </div>
           <div class="col-lg-6 order-lg-2 order-1">
-            <div class="picture">
+            <div class="picture" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000">
               <div class="s1">
                 <div class="inner"></div>
               </div>
             </div>
           </div>
           <div class="col-lg-6 order-lg-3 order-3">
-            <div class="picture">
+            <div class="picture" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000">
               <div class="s1">
                 <div class="inner"></div>
               </div>
             </div>
           </div>
           <div class="col-lg-6 order-lg-4 order-4">
-            <div class="text">
+            <div class="text" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000">
               <p class="fs-30 fw-7">Safety & Quality Assurance</p>
               
               <p class="fs-18 pr-lg-4">
