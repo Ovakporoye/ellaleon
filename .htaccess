@@ -1,0 +1,12 @@
+
+# BEGIN VUE.JS
+<ifModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{SERVER_PORT} 80
+    RewriteRule ^(.*)$ https://ellaleonltd.com/$1 [R,L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule (.*) /index.html [QSA,L]
+</ifModule>
+# END VUE.JS
